@@ -1,0 +1,57 @@
+.internship-details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.internship-details-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.internship-details-container p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-button,
+.alert-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alert-button {
+  background-color: #28a745;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.alert-button:hover {
+  background-color: #218838;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}

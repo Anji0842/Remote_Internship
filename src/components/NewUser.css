@@ -1,0 +1,101 @@
+/* Style for the New User form container */
+.new-user-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Heading for the form */
+  .new-user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form Group styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label for form fields */
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input fields styling */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Error message styling */
+  .new-user-container p {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Submit button styling */
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional button container for spacing */
+  .add-user-button-container {
+    margin-bottom: 20px;
+  }
+  
+  .btn-new-user {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-new-user:hover {
+    background-color: #218838;
+  }
+  
+  /* For smaller screens, adjust form width */
+  @media (max-width: 600px) {
+    .new-user-container {
+      width: 90%;
+    }
+  }
+  
