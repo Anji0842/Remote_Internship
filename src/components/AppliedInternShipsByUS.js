@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./ManageUsers.css"; // Import CSS for styling
 
 const ManageUsers = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [userInfo, setUserInfo] = useState(null);
+  const [userInfo, setUserInfo] = useState(null); // Uncomment this line
   const [userID, setUserID] = useState(0);
 
   const fetchUsers = async (userid) => {
@@ -37,7 +37,7 @@ const ManageUsers = () => {
 
         if (response.ok) {
           const data = await response.json();
-          setUserInfo(data);
+          setUserInfo(data); // No error here since setUserInfo is now defined
           setUserID(data.id);
         } else {
           throw new Error("Failed to fetch user data");
@@ -49,14 +49,13 @@ const ManageUsers = () => {
     };
 
     fetchUserInfo();
-  }, []); 
+  }, []);
 
   useEffect(() => {
-    if (userID !== 0) { 
+    if (userID !== 0) {
       fetchUsers(userID);
     }
-  }, [userID]); 
-
+  }, [userID]);
 
   const renderUsers = () => {
     if (loading) {

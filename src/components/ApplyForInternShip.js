@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './SignUp.css'; // Add CSS styling in a separate file
 
 const ApplyForInternship = () => {
@@ -35,7 +35,7 @@ const ApplyForInternship = () => {
     };
 
     fetchUserInfo();
-  }, []);
+  }, [internship]);
 
   const [formData, setFormData] = useState({
     skills: '',

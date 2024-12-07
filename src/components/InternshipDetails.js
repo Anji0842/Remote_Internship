@@ -45,11 +45,11 @@ const InternshipDetails = () => {
   }
 
   // Function to handle the alert button click
-  const handleAlertClick = () => {
+  /*const handleAlertClick = () => {
     // alert(`You have selected the "${internship.title}" internship.`);
     console.log(userdata);
     console.log(internship)
-  };
+  };*/
 
   return (
     <div className="internship-details-container">

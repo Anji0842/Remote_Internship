@@ -7,7 +7,7 @@ const Profile = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const[userdata,setUserdata]=useState(null);
+ // const[userdata,setUserdata]=useState(null);
 
   // Fetch user information on component mount
   useEffect(() => {

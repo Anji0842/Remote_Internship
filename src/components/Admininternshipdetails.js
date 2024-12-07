@@ -47,8 +47,7 @@ const InternshipDetails = () => {
   // Function to handle the alert button click
   const handleAlertClick = () => {
     // alert(`You have selected the "${internship.title}" internship.`);
-    console.log(userdata);
-    console.log(internship)
+    alert("This give an Error");
   };
 
   return (
